@@ -10,7 +10,7 @@ IGNORE_DIRS = {
 ALLOWED_EXTENSIONS = {
     '.py', '.java', '.js', '.jsx', '.ts', '.tsx', 
     '.cpp', '.h', '.hpp', '.c', '.php', '.css', 
-    '.html', '.ini', '.json', '.md', '.go', '.rs', 'scss'
+    '.html', '.ini', '.json', '.md', '.go', '.rs', '.scss'
 }
 
 def generate_tree(dir_path, prefix="", ignore_dirs=None):
