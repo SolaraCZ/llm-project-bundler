@@ -84,3 +84,12 @@ def bundle_project(root_dir, output_file):
                     
                 except Exception as e:
                     print(f"Error reading {path.name}: {e}")
+
+if __name__ == "__main__":
+    # uses current directory as project root folder, you can change this
+    TARGET_PROJECT = "." 
+    OUTPUT_FILENAME = "project_context.md"
+    
+    print(f"scanning directory: {Path(TARGET_PROJECT).resolve()}")
+    bundle_project(TARGET_PROJECT, OUTPUT_FILENAME)
+    print(f"\ncontext saved to {OUTPUT_FILENAME}")
