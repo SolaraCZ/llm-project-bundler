@@ -12,8 +12,7 @@ Perfect for feeding massive codebase context into AI models (like ChatGPT, Claud
 ## Features
 
 * **Directory Tree:** Auto-generates a visual file hierarchy at the top of the file so the AI understands your project's architecture before reading the code.
-* **Syntax-Highlighted Markdown:** Automatically wraps each file's source code in its native Markdown code block (e.g., ` ```py `, ` 
-```js `, ` ```scss `).
+* **Syntax-Highlighted Markdown:** Automatically wraps each file's source code in its native Markdown code block (e.g., `py` `js`, `scss`).
 * **Smart Ignored Directories:** Built-in skipping for heavy build artifacts, environments, and hidden folders (`node_modules`, `venv`, `dist`, `out`, `.git`, etc.).
 * **Encoding-Safe:** Replaces invalid characters instead of crashing when encountering weirdly encoded files.
 
