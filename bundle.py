@@ -39,6 +39,7 @@ def generate_tree(dir_path, prefix="", ignore_dirs=None):
 def bundle_project(root_dir, output_file):
     root_path = Path(root_dir).resolve()
     output_path = Path(output_file).resolve()
+    script_path = Path(__file__).resolve()
     
     with open(output_path, 'w', encoding='utf-8') as outfile:
         # write header and directory tree
@@ -59,8 +60,11 @@ def bundle_project(root_dir, output_file):
             # skip ignored dirs
             if any(part in IGNORE_DIRS for part in path.parts):
                 continue
+
+            if path.resolve() == script_path:
+                continue
                 
-            # check if the file has a target file extension and isnt itself
+            # check if the file has a target file extension
             if path.is_file() and path.suffix.lower() in ALLOWED_EXTENSIONS:
                 if path == output_path:
                     continue
