@@ -43,9 +43,7 @@ def bundle_project(root_dir, output_file):
     
     with open(output_path, 'w', encoding='utf-8') as outfile:
         # write header and directory tree
-        outfile.write("===================================================================\n")
         outfile.write(f"PROJECT CONTEXT: {root_path.name}\n")
-        outfile.write("===================================================================\n\n")
         
         outfile.write("## DIRECTORY STRUCTURE:\n")
         outfile.write("```\n")
