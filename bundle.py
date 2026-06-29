@@ -88,7 +88,7 @@ def bundle_project(root_dir, output_file):
                     print(f"Error reading {path.name}: {e}")
 
 if __name__ == "__main__":
-    # uses current directory as project root folder, you can change this
+    # config: uses current directory as project root folder, you can change this
     TARGET_PROJECT = "." 
     OUTPUT_FILENAME = "project_context.md"
     
